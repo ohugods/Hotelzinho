@@ -119,6 +119,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  width: 100%;
 }
 
 .schedule-item {
@@ -152,6 +153,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  width: 100%;
 }
 
 .contact-item {
@@ -171,6 +173,7 @@
   font-size: 0.9rem;
   line-height: 1.5;
   font-weight: 500;
+  width: 100%;
 }
 
 .contact-link {
@@ -181,6 +184,7 @@
   font-weight: 500;
   transition: color 0.3s ease;
   display: inline-block;
+  width: 100%;
 }
 
 .contact-link:hover {
@@ -244,100 +248,22 @@
 
 @media (max-width: 768px) {
   .footer {
-    padding: 1.5rem 0 1rem;
+    padding: 2.5rem 0 1.5rem;
   }
 
   .footer-container {
-    padding: 0 10px;
+    padding: 0 16px;
   }
 
   .footer-content {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    margin-bottom: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
   }
 
   .footer-section {
-    text-align: center;
-  }
-
-  .footer-logo h3 {
-    font-size: 1rem;
-  }
-
-  .footer-tagline {
-    font-size: 0.7rem;
-  }
-
-  .footer-description {
-    font-size: 0.75rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .footer-title {
-    font-size: 0.8rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .footer-link {
-    font-size: 0.75rem;
-  }
-
-  .footer-links li {
-    margin-bottom: 0.25rem;
-  }
-
-  .schedule-period {
-    font-size: 0.7rem;
-  }
-
-  .schedule-time {
-    font-size: 0.7rem;
-  }
-
-  .contact-address {
-    font-size: 0.7rem;
-  }
-
-  .contact-link {
-    font-size: 0.7rem;
-  }
-
-  .footer-social {
-    justify-content: center;
-    gap: 0.5rem;
-  }
-
-  .social-link {
-    width: 30px;
-    height: 30px;
-  }
-
-  .footer-bottom {
-    padding-top: 0.75rem;
-  }
-
-  .footer-copyright {
-    font-size: 0.7rem;
-  }
-
-  .footer-credits {
-    font-size: 0.7rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .footer {
-    padding: 2.5rem 0 1rem;
-  }
-
-  .footer-container {
-    padding: 0 10px;
-  }
-
-  .footer-content {
-    gap: 1.5rem;
-    margin-bottom: 1.5rem;
+    text-align: left;
+    padding: 0 5px;
   }
 
   .footer-logo h3 {
@@ -345,65 +271,197 @@
   }
 
   .footer-tagline {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
 
   .footer-description {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     margin-bottom: 1rem;
+    line-height: 1.5;
   }
 
   .footer-title {
-    font-size: 0.95rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
   }
 
   .footer-link {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
+    padding: 4px 0;
   }
 
   .footer-links li {
     margin-bottom: 0.5rem;
   }
 
-  .social-link {
-    width: 35px;
-    height: 35px;
-  }
-
-  .schedule-item {
-    padding: 0.5rem 0;
-  }
-
   .schedule-period {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .schedule-time {
-    font-size: 0.8rem;
-  }
-
-  .contact-item {
-    padding: 0.5rem 0;
+    font-size: 0.9rem;
   }
 
   .contact-address {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .contact-link {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    padding: 4px 0;
+    display: inline-block;
+  }
+
+  .footer-social {
+    justify-content: flex-start;
+    gap: 0.75rem;
+  }
+
+  .social-link {
+    width: 36px;
+    height: 36px;
   }
 
   .footer-bottom {
-    padding-top: 1rem;
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
   .footer-copyright {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
 
   .footer-credits {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 2rem 0 1.5rem;
+  }
+
+  .footer-container {
+    padding: 0 16px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer-section {
+    text-align: center;
+    padding: 0;
+    border-bottom: 1px solid rgba(232, 167, 184, 0.1);
+    padding-bottom: 2rem;
+  }
+  
+  .footer-section:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .footer-logo h3 {
+    font-size: 1.3rem;
+  }
+
+  .footer-tagline {
+    font-size: 0.9rem;
+  }
+
+  .footer-description {
+    font-size: 0.95rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-title {
+    font-size: 1.1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .footer-link {
+    font-size: 1rem;
+    padding: 8px 0;
+    display: inline-block;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links li {
+    margin-bottom: 0.75rem;
+  }
+
+  .social-link {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .footer-social {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .schedule-item {
+    padding: 0.75rem 0;
+    text-align: center;
+  }
+
+  .schedule-period {
+    font-size: 1rem;
+  }
+
+  .schedule-time {
+    font-size: 0.95rem;
+  }
+  
+  .schedule-info {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .contact-item {
+    padding: 0.75rem 0;
+    text-align: center;
+  }
+  
+  .contact-info {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .contact-address {
+    font-size: 0.95rem;
+  }
+
+  .contact-link {
+    font-size: 0.95rem;
+    padding: 6px 0;
+  }
+
+  .footer-bottom {
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .footer-copyright {
+    font-size: 0.9rem;
+  }
+
+  .footer-credits {
+    font-size: 0.9rem;
   }
 }

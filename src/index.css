@@ -375,33 +375,33 @@ p {
 
   /* Tipografia para telas muito pequenas */
   h1 {
-    font-size: 1.1rem;
-    line-height: 1.1;
-    margin-bottom: 0.25rem;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
   }
 
   h2 {
-    font-size: 1rem;
-    line-height: 1.2;
-    margin-bottom: 0.25rem;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
   }
 
   h3 {
-    font-size: 0.9rem;
-    line-height: 1.3;
-    margin-bottom: 0.25rem;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
   }
 
   h4 {
-    font-size: 0.85rem;
-    line-height: 1.3;
-    margin-bottom: 0.25rem;
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
   }
 
   p {
-    font-size: 0.75rem;
-    line-height: 1.3;
-    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
   }
 
   .text-large {

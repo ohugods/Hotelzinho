@@ -244,17 +244,17 @@
 
 @media (max-width: 768px) {
   .footer {
-    padding: 3rem 0 1.5rem;
+    padding: 1.5rem 0 1rem;
   }
 
   .footer-container {
-    padding: 0 15px;
+    padding: 0 10px;
   }
 
   .footer-content {
     grid-template-columns: 1fr;
-    gap: 2rem;
-    margin-bottom: 2rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
   }
 
   .footer-section {
@@ -262,55 +262,67 @@
   }
 
   .footer-logo h3 {
-    font-size: 1.3rem;
-  }
-
-  .footer-tagline {
-    font-size: 0.85rem;
-  }
-
-  .footer-description {
-    font-size: 0.9rem;
-  }
-
-  .footer-title {
     font-size: 1rem;
   }
 
+  .footer-tagline {
+    font-size: 0.7rem;
+  }
+
+  .footer-description {
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-title {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+
   .footer-link {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
+  }
+
+  .footer-links li {
+    margin-bottom: 0.25rem;
   }
 
   .schedule-period {
-    font-size: 0.85rem;
+    font-size: 0.7rem;
   }
 
   .schedule-time {
-    font-size: 0.85rem;
+    font-size: 0.7rem;
   }
 
   .contact-address {
-    font-size: 0.85rem;
+    font-size: 0.7rem;
   }
 
   .contact-link {
-    font-size: 0.85rem;
+    font-size: 0.7rem;
   }
 
   .footer-social {
     justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .social-link {
+    width: 30px;
+    height: 30px;
   }
 
   .footer-bottom {
-    padding-top: 1.5rem;
+    padding-top: 0.75rem;
   }
 
   .footer-copyright {
-    font-size: 0.85rem;
+    font-size: 0.7rem;
   }
 
   .footer-credits {
-    font-size: 0.85rem;
+    font-size: 0.7rem;
   }
 }
 

@@ -359,56 +359,68 @@
 
 @media (max-width: 768px) {
   .gallery-filters {
-    gap: 0.5rem;
+    gap: 0.25rem;
     flex-wrap: wrap;
     justify-content: center;
   }
 
   .filter-btn {
-    padding: 10px 20px;
-    font-size: 0.9rem;
+    padding: 6px 12px;
+    font-size: 0.8rem;
   }
 
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 0.5rem;
   }
 
   .gallery-placeholder {
-    padding: 1.5rem;
+    padding: 0.75rem;
   }
 
   .gallery-emoji {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .gallery-placeholder h3 {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 
   .gallery-placeholder p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   .gallery-info {
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .spaces-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 0.5rem;
   }
 
   .space-card {
-    padding: 2rem;
+    padding: 1rem;
   }
 
-  .cta-content h2 {
+  .space-emoji {
     font-size: 2rem;
   }
 
+  .space-card h3 {
+    font-size: 1rem;
+  }
+
+  .space-card p {
+    font-size: 0.8rem;
+  }
+
+  .cta-content h2 {
+    font-size: 1.5rem;
+  }
+
   .cta-content p {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 }
 

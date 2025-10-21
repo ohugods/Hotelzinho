@@ -1,0 +1,322 @@
+.services-page {
+  padding-top: 80px; /* Para compensar o header fixo */
+}
+
+/* Cronograma - Design Delicado */
+.schedule-section {
+  background: linear-gradient(135deg, #fefefe 0%, #f8f5f0 100%);
+  padding: 4rem 0;
+}
+
+.schedule-description {
+  font-size: 1.1rem;
+  color: #8b7355;
+  margin-bottom: 4rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+.schedule-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.schedule-card {
+  padding: 1.25rem;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border: 1px solid rgba(232, 167, 184, 0.1);
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.schedule-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(232, 167, 184, 0.03) 0%, rgba(212, 165, 116, 0.03) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.schedule-card:hover::before {
+  opacity: 1;
+}
+
+.schedule-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(232, 167, 184, 0.12);
+  border-color: rgba(232, 167, 184, 0.2);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.schedule-card-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.schedule-card:hover .schedule-card-icon {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.schedule-card-content {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  width: 100%;
+}
+
+.schedule-time {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: block;
+  transition: all 0.4s ease;
+  letter-spacing: 0.5px;
+}
+
+.schedule-card:hover .schedule-time {
+  transform: translateY(-2px);
+}
+
+.schedule-card h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  transition: all 0.4s ease;
+  color: #4a4a4a;
+}
+
+.schedule-card:hover h4 {
+  transform: translateY(-2px);
+}
+
+.schedule-card p {
+  margin: 0;
+  line-height: 1.4;
+  font-size: 0.8rem;
+  transition: all 0.4s ease;
+  color: #6b6b6b;
+}
+
+.schedule-card:hover p {
+  transform: translateY(-2px);
+}
+
+/* Cards por categoria - Cores Delicadas */
+.arrival-card .schedule-card-icon {
+  background: linear-gradient(135deg, #f5c6d7 0%, #f0d1a8 100%);
+  color: #8b5a6b;
+}
+
+.arrival-card .schedule-time {
+  color: #d4a574;
+}
+
+.meal-card .schedule-card-icon {
+  background: linear-gradient(135deg, #ffc4a3 0%, #ffb3a3 100%);
+  color: #8b5a3c;
+}
+
+.meal-card .schedule-time {
+  color: #d4a574;
+}
+
+.education-card .schedule-card-icon {
+  background: linear-gradient(135deg, #b8d4d1 0%, #a8d4c8 100%);
+  color: #5a6b6b;
+}
+
+.education-card .schedule-time {
+  color: #8b9b8b;
+}
+
+.play-card .schedule-card-icon {
+  background: linear-gradient(135deg, #ffd4a3 0%, #ffe4a3 100%);
+  color: #8b6b3c;
+}
+
+.play-card .schedule-time {
+  color: #d4a574;
+}
+
+.hygiene-card .schedule-card-icon {
+  background: linear-gradient(135deg, #c4d4f0 0%, #d4c4f0 100%);
+  color: #6b5a8b;
+}
+
+.hygiene-card .schedule-time {
+  color: #8b7ba8;
+}
+
+.rest-card .schedule-card-icon {
+  background: linear-gradient(135deg, #e4c4f0 0%, #f0c4e4 100%);
+  color: #8b5a7b;
+}
+
+.rest-card .schedule-time {
+  color: #a87ba8;
+}
+
+.creative-card .schedule-card-icon {
+  background: linear-gradient(135deg, #ffc4c4 0%, #ffd4a3 100%);
+  color: #8b5a5a;
+}
+
+.creative-card .schedule-time {
+  color: #d4a574;
+}
+
+.departure-card .schedule-card-icon {
+  background: linear-gradient(135deg, #f0d1a8 0%, #f5c6d7 100%);
+  color: #8b6b5a;
+}
+
+.departure-card .schedule-time {
+  color: #d4a574;
+}
+
+/* Pacotes */
+.packages-section {
+  background-color: #fefefe;
+}
+
+.packages-description {
+  font-size: 1.1rem;
+  color: #6b6b6b;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.packages-grid {
+  gap: 2rem;
+}
+
+.package-card {
+  padding: 2.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  word-wrap: break-word;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.package-card.featured {
+  border: 3px solid #e8a7b8;
+  background: linear-gradient(135deg, #fefefe 0%, #fdf7f9 100%);
+}
+
+.package-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.package-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d2d2d;
+  margin-bottom: 1rem;
+}
+
+.package-price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #e8a7b8;
+}
+
+.period {
+  font-size: 1rem;
+  color: #8b7355;
+  font-weight: 600;
+}
+
+.package-features {
+  flex: 1;
+  margin-bottom: 2rem;
+}
+
+.package-features .feature-item {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.package-features .feature-item span:last-child {
+  font-size: 0.9rem !important;
+  flex: 1 !important;
+  line-height: 1.4 !important;
+  word-wrap: break-word !important;
+  max-width: 150px !important;
+  white-space: normal !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .schedule-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .schedule-card {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+
+  .schedule-card-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .packages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .package-card {
+    padding: 2rem;
+  }
+}

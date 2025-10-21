@@ -561,6 +561,18 @@
 }
 
 /* Responsividade */
+@media (max-width: 1024px) {
+  .contact-info-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .form-content {
     grid-template-columns: 1fr;
@@ -576,13 +588,140 @@
     gap: 1.5rem;
   }
 
+  .contact-info-card {
+    padding: 1.5rem;
+  }
+
+  .info-icon {
+    width: 55px;
+    height: 55px;
+  }
+
+  .contact-info-card h3 {
+    font-size: 1rem;
+  }
+
+  .info-content {
+    font-size: 0.9rem;
+  }
+
+  .form-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-header p {
+    font-size: 0.9rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 10px 14px;
+    font-size: 0.95rem;
+  }
+
   .faq-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 
+  .faq-card {
+    padding: 1.5rem;
+  }
+
+  .faq-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .faq-card p {
+    font-size: 0.9rem;
+  }
+
   .cta-buttons {
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
+  }
+
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+
+  .cta-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    padding: 1.5rem;
+  }
+
+  .contact-info-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .contact-info-card {
+    padding: 1.25rem;
+  }
+
+  .info-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .contact-info-card h3 {
+    font-size: 0.95rem;
+  }
+
+  .info-content {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  .form-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .form-header p {
+    font-size: 0.85rem;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .faq-card {
+    padding: 1.25rem;
+  }
+
+  .faq-card h3 {
+    font-size: 1rem;
+  }
+
+  .faq-card p {
+    font-size: 0.85rem;
+  }
+
+  .cta-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta-content p {
+    font-size: 0.95rem;
+  }
+
+  .cta-buttons .btn-primary,
+  .cta-buttons .btn-secondary {
+    width: 100%;
+    max-width: 280px;
+    padding: 12px 20px;
+    font-size: 15px;
   }
 }

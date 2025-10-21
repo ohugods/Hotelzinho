@@ -159,11 +159,10 @@ const HomePage = () => {
         <div className="container">
           <div className="about-content">
             <div className="about-text">
-              <h2>Nossa História de <span className="highlight">Amor</span></h2>
+              <h2>Nossa História</h2>
               <p className="about-description">
-                Há mais de 10 anos, somos referência em educação infantil na região. 
-                Nosso compromisso é oferecer um ambiente onde cada criança possa 
-                explorar, descobrir e crescer com alegria e segurança.
+                Somos referência em educação infantil na região há mais de 10 anos. 
+                Nosso compromisso é criar um ambiente seguro e acolhedor para o desenvolvimento das crianças.
               </p>
               <div className="about-features">
                 <div className="about-feature">

@@ -4,13 +4,14 @@
 
 /* Hero Section Redesenhado */
 .hero-section {
-  min-height: 100vh;
+  min-height: auto;
   background: linear-gradient(135deg, #fefefe 0%, #f8f5f0 100%);
   display: flex;
   align-items: flex-start;
   padding-top: 2rem;
   position: relative;
   overflow: hidden;
+  padding-bottom: 2rem;
 }
 
 .hero-background {
@@ -84,7 +85,7 @@
   position: relative;
   z-index: 2;
   opacity: 1;
-  transform: translateY(80px);
+  transform: translateY(0);
   object-position: center;
   background: white;
   padding: 0;
@@ -760,7 +761,7 @@
 
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2.5rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -943,47 +944,66 @@
 }
 
 @media (max-width: 768px) {
+  .home {
+    padding-top: 50px;
+  }
+
+  .hero-section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .hero-container {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 0.5rem;
     text-align: center;
-    padding: 1rem 0.5rem;
+    padding: 0.5rem 0.5rem;
     min-height: auto;
   }
 
   .hero-content h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     line-height: 1.1;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
   }
 
   .hero-content p {
     font-size: 0.9rem;
     margin-bottom: 1rem;
-    line-height: 1.4;
+    line-height: 1.5;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero-image .image-placeholder {
     width: 120px;
     height: 120px;
-    padding: 1rem;
+    padding: 0.5rem;
     margin: 0 auto;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
   }
   
   .hero-image .image-placeholder svg {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
 
   .hero-logo {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     transform: translateY(0);
   }
 
   .hero-features {
     flex-direction: row;
-    gap: 0.5rem;
+    gap: 0.25rem;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -992,9 +1012,9 @@
 
   .feature-item {
     width: auto;
-    padding: 0.3rem 0.5rem;
-    font-size: 0.8rem;
-    min-width: 80px;
+    padding: 0.25rem 0.4rem;
+    font-size: 0.7rem;
+    min-width: auto;
   }
 
   .feature-item span {
@@ -1015,67 +1035,185 @@
     margin-top: 1rem;
   }
 
-  .btn-primary, .btn-secondary {
+  .btn-primary, .btn-secondary, .btn-outline, .hero-btn {
     width: auto;
-    min-width: 120px;
-    padding: 8px 16px;
-    font-size: 13px;
-    flex: 1;
-    max-width: 140px;
+    min-width: auto;
+    padding: 10px 16px;
+    font-size: 14px;
+    max-width: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .differentials-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 1rem;
+  }
+
+  .differential-card {
+    padding: 1rem;
+  }
+
+  .differential-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+  }
+
+  .differential-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .differential-card p {
+    font-size: 0.75rem;
+    line-height: 1.3;
+  }
+
+  .benefits-section {
+    padding: 2rem 0;
   }
 
   .benefits-content {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1rem;
     text-align: center;
   }
 
+  .benefits-text h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .benefits-description {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+
   .benefits-list {
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
   .benefit-item {
-    padding: 1.25rem;
+    padding: 0.75rem;
+    align-items: center;
+    text-align: left;
+  }
+
+  .benefit-content h4 {
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .benefit-content p {
+    font-size: 0.75rem;
+    line-height: 1.3;
+  }
+
+  .faq-section {
+    padding: 2rem 0;
   }
 
   .faq-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 0.75rem;
   }
 
   .faq-item {
-    padding: 1.5rem;
+    padding: 1rem;
+  }
+
+  .faq-item h4 {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .faq-item p {
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .about-preview {
+    padding: 2rem 0;
   }
 
   .about-content {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1rem;
     text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 1.3rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .about-description {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-visual {
+    padding-left: 0;
+  }
+
+  .testimonials-section {
+    padding: 2rem 0;
   }
 
   .testimonials-grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
   }
 
   .testimonial-card {
-    padding: 2rem;
+    padding: 1.75rem;
+  }
+
+  .testimonial-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    position: relative;
+    padding: 0 0.75rem;
+  }
+
+  .author-info h4 {
+    font-size: 1rem;
+  }
+
+  .author-info span {
+    font-size: 0.85rem;
+  }
+
+  .cta-final {
+    padding: 2rem 0;
+  }
+
+  .cta-content h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .cta-content p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
   }
 
   .cta-buttons {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
   }
 
   .hero-buttons {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
+    margin-top: 0.75rem;
+    flex-wrap: wrap;
   }
 
   .testimonials-section {
@@ -1100,32 +1238,46 @@
 }
 
 @media (max-width: 480px) {
+  .home {
+    padding-top: 45px;
+  }
+
+  .hero-section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .hero-container {
-    padding: 0.5rem 0.25rem;
+    padding: 0.5rem;
     gap: 0.5rem;
   }
 
-  .hero-content h1 {
-    font-size: 1.4rem;
+  .hero-title {
+    font-size: 1.2rem;
     line-height: 1.1;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0;
   }
 
-  .hero-content p {
+  .hero-subtitle {
     font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-description {
+    font-size: 0.75rem;
     margin-bottom: 0.5rem;
     line-height: 1.3;
   }
 
   .hero-image .image-placeholder {
-    width: 80px;
-    height: 80px;
-    padding: 0.5rem;
+    width: 60px;
+    height: 60px;
+    padding: 0;
   }
 
   .hero-logo {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     transform: translateY(0);
   }
 
@@ -1171,25 +1323,46 @@
     max-width: 120px;
   }
 
+  .section-header {
+    margin-bottom: 1rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .section-header p {
+    font-size: 0.75rem;
+  }
+
+  .differentials-section {
+    padding: 1.5rem 0;
+  }
+
   .differentials-grid {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
   .testimonials-section {
-    padding: 3rem 0;
+    padding: 2.5rem 0;
   }
 
   .testimonials-header h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .testimonials-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1.25rem;
   }
 
   .testimonial-card {
     padding: 1.5rem;
+  }
+  
+  .testimonial-content p {
+    font-size: 0.9rem;
+    line-height: 1.5;
   }
 }

@@ -39,6 +39,7 @@
   height: 50px;
   object-fit: contain;
   border-radius: 8px;
+  display: block;
 }
 
 .logo-text {
@@ -135,9 +136,97 @@
 }
 
 @media (max-width: 768px) {
+  .header {
+    height: 50px;
+  }
+
   .header-container {
     padding: 0 10px;
     height: 50px;
+  }
+
+  .logo-image {
+    width: 32px;
+    height: 32px;
+  }
+
+  .logo h1 {
+    font-size: 18px;
+  }
+
+  .tagline {
+    font-size: 9px;
+    margin-top: -2px;
+  }
+
+  .nav {
+    position: fixed;
+    top: 50px;
+    left: -100%;
+    width: 100%;
+    height: auto;
+    max-height: calc(100vh - 50px);
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 0;
+    transition: left 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    z-index: 1000;
+  }
+
+  .nav-open {
+    left: 0;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .nav-list li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(232, 167, 184, 0.1);
+    padding-bottom: 10px;
+  }
+
+  .nav-list li:last-child {
+    border-bottom: none;
+  }
+
+  .nav-list a {
+    font-size: 16px;
+    padding: 10px 0;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+  }
+
+  .hamburger {
+    display: flex;
+    padding: 8px;
+  }
+
+  .bar {
+    width: 20px;
+    height: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 45px;
+  }
+  
+  .header-container {
+    padding: 0 12px;
+    height: 45px;
   }
 
   .logo-image {
@@ -151,87 +240,40 @@
 
   .tagline {
     font-size: 8px;
-    margin-top: -2px;
-  }
-
-  .nav {
-    position: fixed;
-    top: 50px;
-    left: -100%;
-    width: 100%;
-    height: calc(100vh - 50px);
-    background: rgba(255, 255, 255, 0.98);
-    backdrop-filter: blur(10px);
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 20px;
-    transition: left 0.3s ease;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-  }
-
-  .nav-open {
-    left: 0;
-  }
-
-  .nav-list {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .nav-list a {
-    font-size: 14px;
-    padding: 8px 0;
-    font-weight: 500;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-
-  .bar {
-    width: 20px;
-    height: 2px;
-  }
-}
-
-@media (max-width: 480px) {
-  .header-container {
-    padding: 0 8px;
-    height: 45px;
-  }
-
-  .logo-image {
-    width: 24px;
-    height: 24px;
-  }
-
-  .logo h1 {
-    font-size: 14px;
-  }
-
-  .tagline {
-    font-size: 7px;
     margin-top: -1px;
   }
 
   .nav {
     top: 45px;
-    height: calc(100vh - 45px);
-    padding-top: 15px;
+    max-height: calc(100vh - 45px);
+    padding: 15px 0;
   }
 
   .nav-list {
-    gap: 12px;
+    gap: 5px;
+  }
+
+  .nav-list li {
+    padding-bottom: 8px;
+    margin-bottom: 8px;
   }
 
   .nav-list a {
-    font-size: 13px;
-    padding: 6px 0;
+    font-size: 16px;
+    padding: 10px 0;
   }
 
   .bar {
     width: 18px;
     height: 2px;
+  }
+  
+  /* Melhorias no toque para dispositivos móveis */
+  .nav-list a {
+    padding: 12px 0;
+  }
+  
+  .hamburger {
+    padding: 10px;
   }
 }

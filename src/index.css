@@ -355,6 +355,16 @@ p {
   }
 }
 
+/* Mobile App Styles */
+.mobile-app {
+  font-size: 16px; /* Previne zoom no iOS */
+  -webkit-text-size-adjust: 100%;
+}
+
+.mobile-app * {
+  -webkit-tap-highlight-color: rgba(232, 167, 184, 0.1);
+}
+
 @media (max-width: 480px) {
   .container {
     padding: 0 12px;

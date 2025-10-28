@@ -1,0 +1,293 @@
+.mobile-contact {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+/* Hero Section */
+.mobile-contact-hero {
+  background: linear-gradient(135deg, #f8f5f0 0%, #fdf7f9 100%);
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 1px solid rgba(232, 167, 184, 0.2);
+}
+
+.mobile-contact-hero h1 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #2d2d2d;
+  margin-bottom: 8px;
+}
+
+.mobile-contact-hero p {
+  font-size: 16px;
+  color: #6b6b6b;
+}
+
+/* Contact Info */
+.mobile-contact-info {
+  padding: 32px 20px;
+  background: white;
+}
+
+.mobile-contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.mobile-contact-card {
+  background: rgba(248, 245, 240, 0.5);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid rgba(232, 167, 184, 0.1);
+  transition: all 0.3s;
+}
+
+.mobile-contact-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(232, 167, 184, 0.15);
+}
+
+.mobile-contact-icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #e8a7b8, #d4a574);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(232, 167, 184, 0.3);
+}
+
+.mobile-contact-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2d2d2d;
+  margin-bottom: 8px;
+}
+
+.mobile-contact-content {
+  font-size: 14px;
+  color: #6b6b6b;
+  line-height: 1.5;
+  margin: 0;
+  white-space: pre-line;
+}
+
+/* Form Section */
+.mobile-contact-form-section {
+  padding: 32px 20px;
+  background: linear-gradient(135deg, #fdf7f9 0%, #f8f5f0 100%);
+}
+
+.mobile-form-container {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  border: 1px solid rgba(232, 167, 184, 0.1);
+  overflow: hidden;
+}
+
+.mobile-form-header {
+  padding: 24px;
+  text-align: center;
+  border-bottom: 1px solid rgba(232, 167, 184, 0.1);
+}
+
+.mobile-form-header h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2d2d2d;
+  margin-bottom: 8px;
+}
+
+.mobile-form-header p {
+  font-size: 14px;
+  color: #6b6b6b;
+  margin: 0;
+}
+
+.mobile-success-message {
+  padding: 40px 24px;
+  text-align: center;
+  color: #4CAF50;
+}
+
+.mobile-success-message svg {
+  margin-bottom: 16px;
+}
+
+.mobile-success-message h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #2d2d2d;
+}
+
+.mobile-success-message p {
+  color: #6b6b6b;
+  margin: 0;
+}
+
+.mobile-contact-form {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mobile-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-form-group label {
+  font-weight: 600;
+  color: #2d2d2d;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.mobile-form-group input,
+.mobile-form-group textarea {
+  padding: 14px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  font-family: inherit;
+}
+
+.mobile-form-group input:focus,
+.mobile-form-group textarea:focus {
+  outline: none;
+  border-color: #e8a7b8;
+}
+
+.mobile-form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.mobile-submit-btn {
+  background: linear-gradient(135deg, #e8a7b8, #d4a574);
+  color: white;
+  border: none;
+  padding: 16px 24px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(232, 167, 184, 0.3);
+}
+
+.mobile-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(232, 167, 184, 0.4);
+}
+
+/* Quick Actions */
+.mobile-quick-actions {
+  padding: 32px 20px;
+  background: white;
+  text-align: center;
+}
+
+.mobile-quick-actions h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2d2d2d;
+  margin-bottom: 20px;
+}
+
+.mobile-action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.mobile-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 24px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  min-width: 200px;
+  transition: all 0.2s;
+}
+
+.mobile-action-btn.primary {
+  background: linear-gradient(135deg, #e8a7b8, #d4a574);
+  color: white;
+  box-shadow: 0 4px 12px rgba(232, 167, 184, 0.3);
+}
+
+.mobile-action-btn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(232, 167, 184, 0.4);
+}
+
+.mobile-action-btn.secondary {
+  background: #25D366;
+  color: white;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+.mobile-action-btn.secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+}
+
+/* FAQ Preview */
+.mobile-faq-preview {
+  padding: 32px 20px;
+  background: linear-gradient(135deg, #f8f5f0 0%, #fefefe 100%);
+}
+
+.mobile-faq-preview h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2d2d2d;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.mobile-faq-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mobile-faq-item {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border: 1px solid rgba(232, 167, 184, 0.1);
+}
+
+.mobile-faq-item h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2d2d2d;
+  margin-bottom: 8px;
+}
+
+.mobile-faq-item p {
+  color: #6b6b6b;
+  margin: 0;
+  line-height: 1.5;
+}

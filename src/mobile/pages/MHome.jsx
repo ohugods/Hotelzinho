@@ -6,7 +6,7 @@ const MHome = () => {
     <div className="m-screen">
       <section className="m-hero">
         <img className="m-hero-logo" src="/logoFazDeConta.png" alt="FazDeConta" />
-        <h2 className="m-hero-title">Hotelzinho infantil com amor e segurança</h2>
+        <h2 className="m-hero-title">Cuidando com amor e segurança</h2>
         <p className="m-hero-sub">Cuidado acolhedor, atividades lúdicas e ambiente seguro.</p>
         <div className="m-hero-actions">
           <Link to="/agendar" className="m-btn-primary">
@@ -78,13 +78,6 @@ const MHome = () => {
             <cite> — Carlos</cite>
           </blockquote>
         </div>
-      </section>
-
-      {/* Créditos */}
-      <section className="m-credits">
-        <a href="https://linkedin.com/in/hugods" target="_blank" rel="noopener noreferrer" className="m-credits-link">
-          Desenvolvido por Hugo Dalmasio
-        </a>
       </section>
     </div>
   )

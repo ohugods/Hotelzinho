@@ -29,6 +29,13 @@ const AppMobile = () => {
         </Routes>
       </main>
       <MBottomNav />
+      
+      {/* Créditos Globais */}
+      <footer className="m-global-footer">
+        <a href="https://linkedin.com/in/hugods" target="_blank" rel="noopener noreferrer" className="m-credits-link">
+          Desenvolvido por Hugo Dalmasio
+        </a>
+      </footer>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Heart, Shield, Sparkles, Calendar } from 'lucide-react'
+import { Calendar, MapPin } from 'lucide-react'
 
 const MHome = () => {
   return (
@@ -17,31 +17,6 @@ const MHome = () => {
         </div>
       </section>
 
-      {/* Destaques rápidos */}
-      <section className="m-cards">
-        <div className="m-card">
-          <Heart size={22} />
-          <div>
-            <h3>Carinho de verdade</h3>
-            <p>Equipe apaixonada pelo desenvolvimento infantil.</p>
-          </div>
-        </div>
-        <div className="m-card">
-          <Shield size={22} />
-          <div>
-            <h3>Segurança total</h3>
-            <p>Ambiente monitorado e protocolos claros.</p>
-          </div>
-        </div>
-        <div className="m-card">
-          <Sparkles size={22} />
-          <div>
-            <h3>Aprender brincando</h3>
-            <p>Atividades lúdicas diariamente.</p>
-          </div>
-        </div>
-      </section>
-
       {/* Informações rápidas */}
       <section className="m-info">
         <div className="m-info-item">
@@ -54,7 +29,10 @@ const MHome = () => {
         </div>
         <div className="m-info-item">
           <span className="m-info-label">Localização</span>
-          <span className="m-info-value">Visite-nos para conhecer</span>
+          <a href="https://maps.google.com/?q=Melgaço+DM" target="_blank" rel="noopener noreferrer" className="m-info-link">
+            <MapPin size={14} />
+            Melgaço - DM
+          </a>
         </div>
       </section>
 
@@ -102,13 +80,11 @@ const MHome = () => {
         </div>
       </section>
 
-      {/* CTA final */}
-      <section className="m-banner">
-        <div>
-          <h3>Pronto para conhecer de perto?</h3>
-          <p>Agende uma visita e tire suas dúvidas.</p>
-        </div>
-        <Link to="/agendar" className="m-btn-primary">Agendar agora</Link>
+      {/* Créditos */}
+      <section className="m-credits">
+        <a href="https://linkedin.com/in/hugods" target="_blank" rel="noopener noreferrer" className="m-credits-link">
+          Desenvolvido por Hugo Dalmasio
+        </a>
       </section>
     </div>
   )
